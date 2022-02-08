@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fragment"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.covidvaccineapp.view.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.covidvaccineapp.view.RegisterFragment"
+        android:label="Registration"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registration_to_registerProblemsFragment"
+            app:destination="@id/registerProblemsFragment" />
+        <action
+            android:id="@+id/action_registration_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/information"
+        android:name="com.example.covidvaccineapp.view.InformationFragment"
+        android:label="Information"
+        tools:layout="@layout/fragment_information" >
+        <action
+            android:id="@+id/action_information_to_registerProblemsFragment"
+            app:destination="@id/registerProblemsFragment" />
+        <action
+            android:id="@+id/action_information_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerProblemsFragment"
+        android:name="com.example.covidvaccineapp.RegisterProblemsFragment"
+        android:label="fragment_register_problems"
+        tools:layout="@layout/fragment_register_problems" >
+        <action
+            android:id="@+id/action_registerProblemsFragment_to_yes_ProblemFragment"
+            app:destination="@id/yes_ProblemFragment" />
+        <action
+            android:id="@+id/action_registerProblemsFragment_to_no_ProblemFragment"
+            app:destination="@id/no_ProblemFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/login"
+        android:name="com.example.covidvaccineapp.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/yes_ProblemFragment"
+        android:name="com.example.covidvaccineapp.Yes_ProblemFragment"
+        android:label="fragment_yes__problem"
+        tools:layout="@layout/fragment_yes__problem" />
+    <fragment
+        android:id="@+id/no_ProblemFragment"
+        android:name="com.example.covidvaccineapp.No_ProblemFragment"
+        android:label="fragment_no__problem"
+        tools:layout="@layout/fragment_no__problem" >
+        <action
+            android:id="@+id/action_no_ProblemFragment_to_realRegistrationFragment"
+            app:destination="@id/realRegistrationFragment" />
+        <action
+            android:id="@+id/action_no_ProblemFragment_to_realRegistrationFragment2"
+            app:destination="@id/realRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/realRegistrationFragment"
+        android:name="com.example.covidvaccineapp.RealRegistrationFragment"
+        android:label="fragment_real_registration"
+        tools:layout="@layout/fragment_real_registration" />
+</navigation>

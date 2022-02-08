@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/no_ProblemFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".No_ProblemFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_none_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="NO"
+            android:textColor="@color/Black"
+            app:cornerRadius="50dp"
+            app:backgroundTint="@color/lightlight_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yesno_priority" />
+
+        <Button
+            android:id="@+id/btn_yes_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="120dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="YES"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            app:cornerRadius="50dp"
+            app:backgroundTint="#FF5722"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yesno_priority" />
+
+        <TextView
+            android:id="@+id/yesno_priority"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/priorities_yes_no"
+            android:textColor="@color/our_gray"
+            android:textSize="10dp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phase" />
+
+        <TextView
+            android:id="@+id/phase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/priorities"
+            android:textColor="@color/dark_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priority_img" />
+
+        <ImageView
+            android:id="@+id/priority_img"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/priority"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priority" />
+
+        <TextView
+            android:id="@+id/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/nosifer"
+            android:gravity="center"
+            android:text="Coronavirus Vaccine Priority Groups"
+            android:textColor="@color/dark_green"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

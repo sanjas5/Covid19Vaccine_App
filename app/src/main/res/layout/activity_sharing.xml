@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SharingActivity">
+    <TextView
+        android:id="@+id/sharing_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/allerta"
+        android:padding="30dp"
+        android:textStyle="italic"
+        android:text="Sometimes I wonder if corona virus is happening because we didn't forward that message to 10 people.So I'm sharing this app with you to make this chain of corona virus."
+        android:textColor="@color/dark_green"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/sharing_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:text="SHARE THIS APP" />
+</LinearLayout>

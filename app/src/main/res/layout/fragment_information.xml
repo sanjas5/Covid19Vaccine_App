@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/info_frag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.InformationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textStyle="italic"
+            android:textColor="@color/light_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_inf" />
+
+        <Button
+            android:id="@+id/login_inf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:fontFamily="sans-serif-smallcaps"
+            app:cornerRadius="50dp"
+            app:backgroundTint="@color/dark_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/or" />
+
+        <Button
+            android:id="@+id/register_inf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Register for COVID-19 Vaccine"
+            android:fontFamily="sans-serif-smallcaps"
+            app:cornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+        <ImageView
+            android:id="@+id/gifImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/onestep"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/for_log_and_reg" />
+
+
+        <TextView
+            android:id="@+id/for_log_and_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="In case that You want to schedule your vaccine appointment, click down below\n"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/do_this_photo" />
+
+        <ImageView
+            android:id="@+id/kovaxin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/kovaxin"
+            app:layout_constraintStart_toEndOf="@+id/astra"
+            app:layout_constraintTop_toBottomOf="@+id/sputnik" />
+
+        <ImageView
+            android:id="@+id/astra"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/astra"
+            app:layout_constraintStart_toEndOf="@+id/jansen"
+            app:layout_constraintTop_toBottomOf="@+id/sputnik" />
+
+        <ImageView
+            android:id="@+id/jansen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/jansen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/moderna" />
+
+        <ImageView
+            android:id="@+id/sputnik"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sputnik"
+            app:layout_constraintStart_toEndOf="@+id/moderna"
+            app:layout_constraintTop_toBottomOf="@+id/sinofarm" />
+
+        <ImageView
+            android:id="@+id/sinofarm"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sinofarm"
+            app:layout_constraintStart_toEndOf="@+id/pfizer"
+            app:layout_constraintTop_toBottomOf="@+id/all_vaccines" />
+
+
+        <ImageView
+            android:id="@+id/pfizer"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/pfizer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/all_vaccines" />
+
+        <ImageView
+            android:id="@+id/moderna"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/moderna"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pfizer" />
+
+        <TextView
+            android:id="@+id/all_vaccines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Authorized and approved vaccines are:"
+            android:textColor="@color/dark_green"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avail_vac" />
+
+        <ImageView
+            android:id="@+id/do_this_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/start2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/do_this" />
+
+        <TextView
+            android:id="@+id/do_this"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What You Should Keep Doing "
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/dark_green"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_this_photo" />
+
+        <ImageView
+            android:id="@+id/start_this_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/start1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_doing" />
+
+        <TextView
+            android:id="@+id/start_doing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\nWhat You Can Start to Do "
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/dark_green"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/safety_text" />
+
+        <TextView
+            android:id="@+id/safety_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/safety_text"
+            android:textColor="@color/dark_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/dark_green"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Safety"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/igotvaccine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/still_learning_all2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:src="@drawable/mask_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/still_learning_all2" />
+
+        <TextView
+            android:id="@+id/still_learning_all2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1464DD17"
+            android:paddingLeft="20dp"
+            android:text="@string/still_learning2_all"
+            android:textColor="@color/dark_green"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/still_learning2" />
+
+        <TextView
+            android:id="@+id/still_learning2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What we are still learning "
+            android:layout_marginTop="20dp"
+            android:background="@color/dark_green"
+            android:gravity="start"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eff_all" />
+
+
+        <TextView
+            android:id="@+id/eff_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#1464DD17"
+            android:paddingLeft="20dp"
+            android:text="@string/effectiveness"
+            android:textColor="@color/dark_green"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/efective" />
+
+        <TextView
+            android:id="@+id/efective"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Effectiveness"
+            android:textColor="@color/dark_green"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.426"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/moderna" />
+
+        <TextView
+            android:id="@+id/avail_vac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/availability"
+            android:background="#1464DD17"
+            android:paddingLeft="20dp"
+            android:textColor="@color/dark_green"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/availability" />
+
+        <TextView
+            android:id="@+id/availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Availability of Vaccines"
+            android:textColor="@color/dark_green"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/still_learning_all" />
+
+        <TextView
+            android:id="@+id/still_learning_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#1464DD17"
+            android:paddingLeft="20dp"
+            android:text="@string/still_learning"
+            android:textColor="@color/dark_green"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/still_learning" />
+
+
+        <TextView
+            android:id="@+id/still_learning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/dark_green"
+            android:gravity="start"
+            android:paddingLeft="20dp"
+            android:text="What We Are Still Learning "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/what_to_know_all" />
+
+        <TextView
+            android:id="@+id/what_to_know_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#1464DD17"
+            android:paddingLeft="20dp"
+            android:text="@string/what_to_know"
+            android:textColor="@color/dark_green"
+            android:textSize="16sp"
+            android:gravity=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/what_to_know_text" />
+
+        <TextView
+            android:id="@+id/what_to_know_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/dark_green"
+            android:gravity="start"
+            android:text="What You Need to Know "
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/key_things" />
+
+        <TextView
+            android:id="@+id/key_things"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text=" Key Things to Know"
+            android:textColor="@color/dark_green"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/info_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle_info" />
+
+        <TextView
+            android:id="@+id/subtitle_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:text="COVID-19 vaccines are safe and effective.\nAfter you’ve been fully vaccinated, you can start to do some things that you had to stop doing because of the pandemic."
+            android:textColor="@color/dark_green"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_title" />
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nosifer"
+            android:text="Vaccines for COVID-19 "
+            android:textColor="@color/dark_green"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

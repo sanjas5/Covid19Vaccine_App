@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6004B00"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="45dp"
+            android:text="COVID-19 VACCINATION"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#FFF"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#FFF"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text=""
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_password"
+                android:backgroundTint="@color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Log in"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold"
+                app:cornerRadius="50dp" />
+
+        </LinearLayout>
+
+
+       <TextView
+           android:layout_below="@id/btn_login"
+           android:clickable="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:paddingBottom="30dp"
+           android:text="Forgot Password?"
+           android:textColor="@color/Black"
+           android:textSize="14sp"
+           android:textStyle="italic"/>
+
+
+
+        <Button
+            android:id="@+id/btn_register_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_marginTop="110dp"
+            android:text="Register now"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:backgroundTint="#00FFFFFF"
+            app:cornerRadius="50dp"
+            app:strokeWidth="0px" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

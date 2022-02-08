@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">COVID VACCINE APP</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="protect_yourself_and_others">Protect yourself and others</string>
+    <string name="todo">TODO</string>
+    <string name="what_to_know" style="text-align: justify;">
+        <ul><br>\n</br>
+            <li> COVID-19 vaccines are safe and effective.<br>\n</br></li><br></br>
+            <li> You may have side effects after vaccination, but these are normal.\n</li><br></br>
+            <li> It typically takes two weeks after vaccination for the body to build protection (immunity) against the virus that causes COVID-19.</li><br>\n</br>
+            <li> You are not fully vaccinated until 2 weeks after the 2nd dose of a two-dose vaccine or two weeks after a one-dose vaccine.</li><br>\n</br>
+            <li> People who have been fully vaccinated can start to do some things that they had stopped doing because of the pandemic.</li><br>\n</br>
+
+        </ul>
+    </string>
+
+    <string name="still_learning">
+        <ul><br>\n</br>
+            <li> We are still learning how well vaccines prevent you from spreading the virus that causes COVID-19 to others, even if you do not have symptoms.</li><br>\n</br>
+            <li> We’re also still learning how long COVID-19 vaccines protect people</li><br>\n</br>
+            <li> We are still learning how many people have to be vaccinated against COVID-19 before most people can be considered protected (population immunity).</li><br>\n</br>
+            <li> We are still learning how effective the vaccines are against new variants of the virus that causes COVID-19.</li><br>\n</br>
+
+
+        </ul>
+    </string>
+
+    <string name="availability">
+        <br>\n</br>
+        <p> COVID-19 vaccines are free and available to anyone who wants one. Vaccines are now more widely accessible in the World. <br>\n</br>Everyone 16 years of age and older is eligible to get a COVID-19 vaccination.
+        </p>
+        <br>\n</br>
+    </string>
+
+
+    <string name="effectiveness" style="text-align: justify;">
+        <br>\n</br>
+        COVID-19 vaccines are effective at keeping you from getting COVID-19.<br>\n</br>After you are fully vaccinated, you may be able to start doing some things you had stopped doing because of the pandemic.
+        Studies show that COVID-19 vaccines are effective at keeping you from getting COVID-19. Getting a COVID-19 vaccine will also help keep you from getting seriously ill even if you do get COVID-19.
+        <br>\n</br>
+        <b>COVID-19 vaccination is an important tool</b> to help us get back to normal.<br>\n</br>
+
+        <br>\n</br>COVID-19 vaccines teach our immune systems how to recognize and fight the virus that causes COVID-19. <br>\n</br>It typically takes two weeks after vaccination for the body to build protection (immunity) against the virus that causes COVID-19.
+        <br>\n</br>That means it is possible a person could still get COVID-19 before or just after vaccination and then get sick because the vaccine did not have enough time to provide protection.<br>\n</br><br>\n</br>
+        People are considered fully protected two weeks after their second dose of the Pfizer-BioNTech or Moderna COVID-19 vaccine, or two weeks after the single-dose Johnson &amp; Johnson’s Janssen COVID-19 vaccine.<br>\n</br>You should keep using all the tools available to protect yourself and others until you are fully vaccinated. <br>\n</br>After you are fully vaccinated, you may be able to start doing some things you had stopped doing because of the pandemic. <br>\n\n</br>
+    </string>
+
+    <string name="still_learning2_all">
+        <pre><br>\n</br>Scientists are still learning <b>how well vaccines prevent you from spreading the virus.</b><br>\n</br>We’re also still learning <b>how long COVID-19 vaccines protect people.</b><br>\n</br>
+            Although COVID-19 vaccines are effective at keeping you from getting sick, scientists are still learning how well vaccines prevent you from spreading the virus that causes COVID-19 to others,even if you do not have symptoms.
+            Early data show the vaccines do help keep people with no symptoms from spreading COVID-19, but we are learning more as more people get vaccinated.<br>\n\n</br>
+
+            We’re also still learning <b>how long</b> COVID-19 vaccines protect people.
+            For these reasons, people who have been fully vaccinated against COVID-19 should keep taking precautions in public places, until we know more, like wearing a mask, staying 6 feet apart from others,
+            avoiding crowds and poorly ventilated spaces, and washing your hands often.<br>\n</br>
+
+        </pre>
+    </string>
+
+    <string name="safety_text">
+        COVID-19 vaccines are safe and effective. These vaccines cannot give you COVID-19.\n<b>You may have side effects after vaccination, but these are normal.</b>
+    </string>
+
+    <string-array name="vaccines">
+        <item>Moderna</item>
+        <item>Pfizer–BioNTech</item>
+        <item>Sputnik Light</item>
+        <item>Sputnik V</item>
+        <item>Oxford–AstraZeneca</item>
+        <item>BBIBP-CorV</item>
+        <item>CoronaVac</item>
+        <item>Novavax</item>
+        <item>Johnson &amp; Johnson</item>
+        <item>Covaxin</item>
+        <item>Convidecia</item>
+    </string-array>
+
+
+    <string name="cant_get">
+        <ul>
+            <li>Do you have a history of SPECIFIC ALLERGIES ?</li><br>\n</br>
+            <li>Are you UNDER 16 YEARS ?</li><br>\n</br>
+             <li>Are you PREGNANT or BREASTFEEDING WOMEN ?</li><br>\n</br>
+            <li>Do you have PRE-EXISTING health condition ?</li><br>\n</br>
+             <li>Have you had COVID-19 in the last month ?</li>
+            </ul>
+
+    </string>
+
+
+    <string name="priorities">
+        <br>\n</br><b>Phase 1a:</b><br>\n</br>Health care personnel<br>\n</br>Long-term care facility residents<br>\n</br><br>\n</br>
+        <br>\n</br><b>Phase 1b:</b><br>\n</br>Frontline essential workers<br>\n</br>People 75 and older<br>\n</br><br>\n</br>
+        <br>\n</br><b>Phase 1c:</b><br>\n</br>People ages 65-74<br>\n</br>People ages 16-64 with high-risk conditions<br>\n</br>Other essential workers<br>\n</br><br>\n</br>
+        <br>\n</br><b>Phase 2:</b><br>\n</br>People 16 and older not in Phase 1
+    </string>
+
+    <string name="priorities_yes_no">If you find yourself in Phase 1a, Phase 1b or in Phase 1c,<br>\n</br>you have priority for making a vaccine appointment!!<br>\n</br>Please, click <b>YES</b>.<br>\n</br>If you are not in phase 1(a-c), and you are 16 and older, click <b>NO</b>.
+    </string>
+    <string name="name">Name:</string>
+    <string name="log_in">Log in</string>
+
+
+    <!--    baza-->
+    <string name="first_name">Name</string>
+    <string name="last_name">Surame</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_title">Login</string>
+    <string name="age">Age</string>
+    <string name="vaccine_type">Chosen Vaccine</string>
+    <string name="create_act">Create Account</string>
+
+
+</resources>
